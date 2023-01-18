@@ -19,9 +19,6 @@
 // Wifi Includes
 #include <WifiSO.h>
 
-
-
-
 /*
 ============================================
 Moved to "PinDefinition.h"
@@ -33,10 +30,6 @@ Moved to "PinDefinition.h"
 
 ============================================
 */
-
-
-
-
 
 void setup()
 {
