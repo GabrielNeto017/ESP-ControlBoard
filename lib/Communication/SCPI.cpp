@@ -19,7 +19,8 @@
 #include <Queue.h>
 #include <CommunicationHandler.h>
 #include <SCPI.h>
-#include <AnalogWrite.h>
+#include <esp32-hal-ledc.h>
+//#include <AnalogWrite.h>
 
 /*********************************************************
     private types.
@@ -216,12 +217,12 @@ void ACTION(){
     if(!strncmp(Data.c_str(), "ACTI:ANAL:AO0 ", 14))
         {  
             AnalogOutputVoid();
-            analogWrite(PIN_ADC2, calc, 100);
+            analogWrite(PIN_ADC2, calc*2.5);
         }
      else  if(!strncmp(Data.c_str(), "ACTI:ANAL:AO1 ", 14))
         {   
             AnalogOutputVoid();
-            analogWrite(PIN_ADC3, calc, 100);
+            analogWrite(PIN_ADC3, calc*2.5);
         } 
 }
 

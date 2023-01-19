@@ -1,8 +1,4 @@
-/*
- * Author: Rodrigo Guerra
- * Date: 02/07/2021
- *
- */
+
 
 #ifndef _GPIO_H
 #define _GPIO_H
